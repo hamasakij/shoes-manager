@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="../css/semantic.css">
+<link rel="stylesheet" href="../css/shoesmanager.css">
+<link rel="stylesheet" href="../js/semantic.js">
+<meta charset="UTF-8">
+<title>カテゴリマスタ</title>
+</head>
+<body>
+    <!--ヘッダー-->
+    <div class="ui fixed inverted menu admin-menu">
+        <div class="ui container">
+            <a href="" class="header item title">
+                <span class="menu-main-title">在庫管理システム</span>
+            </a>
+            <div class="ui secondary menu">
+              <a class="item" th:href="@{/}">在庫一覧</a>
+              <a class="item" th:href="@{/}">入庫登録</a>
+              <a class="item" th:href="@{/}">出庫登録</a>
+              <a class="item" th:href="@{/}">商品マスタ</a>
+              <a class="item" th:href="@{/}">カテゴリマスタ</a>
+              <a class="item" th:href="@{/}">メーカー</a>
+              <a class="item" th:href="@{/}">管理者</a>
+              <button class="ui inverted black button">ログアウト</button>
+            </div>
+        </div>
+    </div>
+      
+        <div class="right-column">
+
+          <div class="content ui container main-content">
+            <div class="content-top">
+            <h3>カテゴリ一覧</h3>
+            <div class="ui segment">
+                <form class="ui form new-entry-form" method="POST">
+                    <div class="ui error message">
+                        <i class="close icon"></i>
+                        <ul class="list">
+                                                </ul>
+                    </div>
+           <!--商品名-->
+           <div class="search">
+              <form id="user-search-form" method="post" th:action=""
+                class="form-inline" th:object="">
+                  <!--カテゴリ-->
+                  <div class="ui category search">
+                    <div class="ui icon input">
+                      <select class="ui search dropdown">
+                          <option value="">選択してください</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                          <option value="">6</option>
+                          <option value="">7</option>
+                        </select>
+                    <input class="prompt" type="text" placeholder="カテゴリ">
+                      <i class="search icon"></i>
+                    </div>
+                  <div class="results"></div>
+                  </div>
+            </form>
+        </div>
+        <div class="btn">
+          <button class="ui button green new-entry" tabindex="0" data-ol-has-click-handler="">新規登録</button>
+        </div>
+    　　<!-- 一覧表示 -->
+        <table class="ui celled table">
+            <thead>
+              <tr>
+                <th class="th-width">カテゴリ名</th>
+                <th></th>
+                <th></th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td data-label="">1111</td>
+                <td>
+                  <a class="btn btn-primary" type="submit" th:href="">
+                    削除
+                  </a>
+                </td>
+                <td>
+                  <a class="btn btn-primary"　type="submit" th:href="">
+                    更新
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="">2222</td>
+                <td>
+                  <a class="btn btn-primary" type="submit" th:href="">
+                    削除
+                  </a>
+                </td>
+                <td>
+                  <a class="btn btn-primary"　type="submit" th:href="">
+                    更新
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="">3333</td>
+                <td>
+                  <a class="btn btn-primary" type="submit" th:href="">
+                    削除
+                  </a>
+                </td>
+                <td>
+                  <a class="btn btn-primary"　type="submit" th:href="">
+                    更新
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+<script
+src="https://code.jquery.com/jquery-3.1.1.min.js"
+integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+crossorigin="anonymous"></script>
+<script src="../js/semantic.js"></script>
+</body>
+</html>

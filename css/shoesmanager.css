@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+.th-width{
+	width:200px;
+}
+
+  
+
+.btn{
+    text-align: right;
+    clear: both;
+}
+.ui search{
+    float:left;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+}
+.price {
+    display:flex;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
