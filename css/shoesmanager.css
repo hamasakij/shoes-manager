@@ -1,28 +1,38 @@
 @charset "UTF-8";
-
-
-.th-width{
-	width:200px;
+.ui fixed inverted menu admin-menu {
+  padding: unset;
 }
 
-  
-
-.btn{
-    text-align: right;
-    clear: both;
-}
-.ui search{
-    float:left;
+.th-width {
+  width: 200px;
 }
 
-.button{
-    display:flex;
-    justify-content: center;
+.right-column {
+  padding: 10%;
+}
+
+.btn {
+  text-align: right;
+  clear: both;
+}
+.ui search {
+  float: left;
+}
+.content ui container main-content {
+  margin-top: 30%;
+  padding-top: 70px;
+}
+.button {
+  display: flex;
+  justify-content: center;
 }
 .price {
-    display:flex;
+  display: flex;
 }
-.image{
-    display: flex;
-    justify-content: center;
+.image {
+  display: flex;
+  justify-content: center;
+}
+th.action {
+  width: 180px;
 }

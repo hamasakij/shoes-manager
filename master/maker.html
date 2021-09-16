@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../css/shoesmanager.css">
 <link rel="stylesheet" href="../js/semantic.js">
 <meta charset="UTF-8">
-<title>カテゴリマスタ</title>
+<title>メーカー</title>
 </head>
 <body>
     <!--ヘッダー-->
@@ -32,7 +32,7 @@
 
           <div class="content ui container main-content">
             <div class="content-top">
-            <h3>カテゴリ一覧</h3>
+            <h3>メーカー一覧</h3>
             <div class="ui segment">
                 <form class="ui form new-entry-form" method="POST">
                     <div class="ui error message">
@@ -44,7 +44,7 @@
            <div class="search">
               <form id="user-search-form" method="post" th:action=""
                 class="form-inline" th:object="">
-                  <!--カテゴリ-->
+                  <!--メーカー-->
                   <div class="ui category search">
                     <div class="ui icon input">
                       <select class="ui search dropdown">
@@ -57,7 +57,7 @@
                           <option value="">6</option>
                           <option value="">7</option>
                         </select>
-                    <input class="prompt" type="text" placeholder="カテゴリ">
+                    <input class="prompt" type="text" placeholder="メーカー">
                       <i class="search icon"></i>
                     </div>
                   <div class="results"></div>
@@ -71,13 +71,13 @@
         <table class="ui celled table">
             <thead>
               <tr>
-                <th class="width">カテゴリ名</th>
+                <th class="width">メーカー名</th>
                 <th class="action">削除・更新</th>
             </tr></thead>
             <tbody>
               <tr>
                 <td data-label="">1111</td>
-                <td class="action">
+                <td class="btn">
                     <button class="ui inverted red button">削除</button>
                     <button class="ui inverted blue button">更新</button>
                 </td>
