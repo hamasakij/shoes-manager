@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="../css/semantic.css">
-<link rel="stylesheet" href="../css/shoesmanager.css">
-<link rel="stylesheet" href="../js/semantic.js">
-<meta charset="UTF-8">
-<title>入庫登録</title>
-</head>
-<body>
-     <!--ヘッダー-->
-     <div class="ui fixed inverted menu admin-menu">
+  <head>
+    <link rel="stylesheet" href="../css/semantic.css" />
+    <link rel="stylesheet" href="../css/shoesmanager.css" />
+    <meta charset="UTF-8" />
+    <title>入庫登録</title>
+  </head>
+  <body>
+    <!--ヘッダー-->
+    <div class="ui fixed inverted menu admin-menu">
       <div class="ui container">
-          <a href="" class="header item title">
-              <span class="menu-main-title">在庫管理システム</span>
-          </a>
-          <div class="ui secondary menu">
-            <a class="item" th:href="@{/}">在庫一覧</a>
-            <a class="item" th:href="@{/}">入庫登録</a>
-            <a class="item" th:href="@{/}">出庫登録</a>
-            <a class="item" th:href="@{/}">商品マスタ</a>
-            <a class="item" th:href="@{/}">カテゴリマスタ</a>
-            <a class="item" th:href="@{/}">メーカー</a>
-            <a class="item" th:href="@{/}">管理者</a>
-            <button class="ui inverted black button">ログアウト</button>
-          </div>
-      </div>
-  </div>
-             
-          <div class="right-column">
-  
-        <div class="content ui container main-content">
-          <div class="content-top">
-            <h3>入庫登録</h3>
-              <div class="ui segment">
-                    <!-- 検索 -->
-              　　 <div class="md-4">
-                        <form id="user-search-form" method="post" th:action=""
-                          class="form-inline" th:object="">
-                        <div class="ui category search">
-                              <div class="ui icon input">
-                                <select class="ui search dropdown">
-                                    <option value="">選択してください</option>
-                                    <option value="">商品ID</option>
-                                    <option value="">カテゴリ</option>
-                                    <option value="">商品名</option>
-                                    <option value="">メーカー</option>
-                                    <option value="">色</option>
-                                    <option value="">サイズ</option>
-                                    <option value="">値段</option>
-                                  </select>
-                              <input class="prompt" type="text" placeholder="商品を探す">
-                                <i class="search icon"></i>
-                              </div>
-                            <div class="results"></div>
-
-                            <button class="ui inverted green button"　type="submit">追加</button>
-                         </div>
-                        </form>
-                    </div>
-                    
-                  
-                  <div class="add-line">
-                    <button class="ui inverted yellow　button" type="submit">行を追加する</button>
-                  </div>
-                  <!-- 一覧表示 -->
-                  <table class="ui celled table">
-                    <thead>
-                      <tr>
-                        <th class="th-width">入庫日</th>
-                        <th class="th-width">商品ID</th>
-                        <th class="th-width">カテゴリ/商品名/色</th>
-                        <th class="th-width">在庫数</th>
-                        <th class="th-width"></th>
-                    </tr></thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="">yyyy/mm/dd</td>
-                        <td data-label="">1111</td>
-                        <td data-label="">スニーカー/aaa/白</td>
-                        <td data-label="">10</td>
-                        <td>
-                          <a class="btn btn-primary" type="submit" th:href="">
-                            削除
-                          </a>
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                  <div class="button">
-                    <button class="ui button red new-entry" tabindex="0" data-ol-has-click-handler="">入庫</button>
-                    <button class="ui button  new-entry" tabindex="0" data-ol-has-click-handler="">戻る</button>
-                  </div>
-          </div>
+        <a href="" class="header item title">
+          <span class="menu-main-title">在庫管理システム</span>
+        </a>
+        <div class="ui secondary menu">
+          <a class="item" href="/zaiko/index.html">在庫一覧</a>
+          <a class="item" href="/nyuuko/index.html">入庫登録</a>
+          <a class="item" href="/syukko/index.html">出庫登録</a>
+          <a class="item" href="/master/product.html">商品マスタ</a>
+          <a class="item" href="/master/category.html">カテゴリマスタ</a>
+          <a class="item" href="/master/maker.html">メーカー</a>
+          <a class="item" href="/admin/userList.html">管理者</a>
+          <button class="ui inverted black button">ログアウト</button>
         </div>
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="../js/semantic.js"></script>
+      </div>
+    </div>
+    <div class="right-column">
+      <h3>入庫登録</h3>
+      <div class="ui segment">
+        <!-- 検索 -->
+        <form
+          id="user-search-form"
+          method="post"
+          th:action=""
+          class="form-inline"
+          th:object=""
+        >
+          <div class="ui category search">
+            <div class="ui icon input">
+              <select class="ui search dropdown">
+                <option value="">選択してください</option>
+                <option value="">商品ID</option>
+                <option value="">カテゴリ</option>
+                <option value="">商品名</option>
+                <option value="">メーカー</option>
+                <option value="">色</option>
+                <option value="">サイズ</option>
+                <option value="">値段</option>
+              </select>
+              <input class="prompt" type="text" placeholder="商品を探す" />
+            </div>
+            <button class="ui inverted green button" 　type="submit">
+              追加
+            </button>
+          </div>
+        </form>
+        <!-- 一覧表示 -->
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th class="th-width">出庫日</th>
+              <th class="th-width">商品ID</th>
+              <th class="th-width">カテゴリ/商品名/色</th>
+              <th class="th-width">出庫数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="">yyyy/mm/dd</td>
+              <td data-label="">1111</td>
+              <td data-label="">スニーカー/aaa/白</td>
+              <td data-label="">
+                <input
+                  type="text"
+                  size="5"
+                  maxlength="20"
+                  name="出庫数"
+                  value="0"
+                />個
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="button">
+          <button
+            class="ui button red new-entry"
+            tabindex="0"
+            data-ol-has-click-handler=""
+          >
+            入庫
+          </button>
+          <button
+            class="ui button new-entry"
+            tabindex="0"
+            data-ol-has-click-handler=""
+          >
+            戻る
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/semantic.js"></script>
   </body>
-  </html>
+</html>
