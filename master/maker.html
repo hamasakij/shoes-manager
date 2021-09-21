@@ -116,5 +116,60 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/semantic.js"></script>
+    <script src="../js/shoes-manager.js"></script>
+    <div class="ui modal transition update-modal">
+      <i class="close icon"></i>
+      <div class="header">メーカーの更新</div>
+      <div class="content">
+        <h5>更新するメーカーの名前</h5>
+        <form
+          id="user-search-form"
+          method="post"
+          th:action=""
+          class="form-inline"
+          th:object=""
+        >
+          <div class="field">
+            <label>メーカー名前</label>
+            <div class="field">
+              <div class="ui right labeled input">
+                <input type="text" name="name" placeholder="名前" value />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="actions">
+        <div class="ui approve button positive">更新</div>
+        <div class="ui cancel button">キャンセル</div>
+      </div>
+    </div>
+    <div class="ui modal transition shipping-modal">
+      <i class="close icon"></i>
+      <div class="header">メーカーの更新</div>
+      <div class="content">
+        <h5>更新するメーカーの名前</h5>
+        <form
+          id="user-search-form"
+          method="post"
+          th:action=""
+          class="form-inline"
+          th:object=""
+        >
+          <div class="field">
+            <label>メーカー名前</label>
+            <div class="field">
+              <div class="ui right labeled input">
+                <input type="text" name="name" placeholder="名前" value />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="actions">
+        <div class="ui approve button positive">更新</div>
+        <div class="ui cancel button">キャンセル</div>
+      </div>
+    </div>
   </body>
 </html>

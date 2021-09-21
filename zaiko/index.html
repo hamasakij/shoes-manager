@@ -44,7 +44,8 @@
           th:object=""
         >
           <!--カテゴリ-->
-          <div class="ui category search">
+          <div class="field">
+            <label>カテゴリ</label>
             <div class="ui icon input">
               <select class="ui search dropdown">
                 <option value="">カテゴリを選択してください</option>
@@ -58,6 +59,7 @@
               </select>
             </div>
             <!--メーカー-->
+            <label>メーカー</label>
             <div class="ui icon input">
               <select class="ui search dropdown">
                 <option value="">メーカーを選択してください</option>
@@ -72,10 +74,11 @@
             </div>
           </div>
           <!--色-->
-          <div class="ui category search">
+          <div class="field">
+            <label>カラー</label>
             <div class="ui icon input">
               <select class="ui search dropdown">
-                <option value="">色を選択してください</option>
+                <option value="">カラーを選択してください</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -86,6 +89,7 @@
               </select>
             </div>
             <!--サイズ-->
+            <label>サイズ</label>
             <div class="ui icon input">
               <select class="ui search dropdown">
                 <option value="">サイズを選択してください</option>
@@ -100,25 +104,31 @@
             </div>
           </div>
           <!--商品コード-->
-          <div class="text-search">
-            <div class="ui search">
-              <input class="prompt" type="text" placeholder="商品コード..." />
-            </div>
-            <!--商品名-->
-            <div class="ui search">
-              <input class="prompt" type="text" placeholder="商品名..." />
+
+          <div class="field">
+            <div class="searchbar">
+              <div class="ui search">
+                <label>商品コード</label>
+                <input class="prompt" type="text" placeholder="商品コード..." />
+                <label>商品名</label>
+                <input class="prompt" type="text" placeholder="商品名..." />
+              </div>
+              <!--商品名-->
             </div>
           </div>
           <!--値段-->
-          <div class="price">
-            <div class="ui right labeled input">
-              <input type="text" placeholder="金額" />
-              <div class="ui basic label">円以上</div>
-            </div>
-            ～
-            <div class="ui right labeled input">
-              <input type="text" placeholder="金額" />
-              <div class="ui basic label">円未満</div>
+          <div class="field">
+            <label>金額</label>
+            <div class="price">
+              <div class="ui right labeled input">
+                <input type="text" placeholder="金額" />
+                <div class="ui basic label">円以上</div>
+              </div>
+              <div class="place">～</div>
+              <div class="ui right labeled input">
+                <input type="text" placeholder="金額" />
+                <div class="ui basic label">円未満</div>
+              </div>
             </div>
           </div>
           <div class="btn">

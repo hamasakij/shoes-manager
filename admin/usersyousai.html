@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/semantic.css" />
+    <link rel="stylesheet" href="../css/shoesmanager.css" />
+    <meta charset="UTF-8" />
+    <title>ユーザー詳細</title>
+  </head>
+  <body>
+    <!--ヘッダー-->
+    <div class="ui fixed inverted menu admin-menu">
+      <div class="ui container">
+        <a href="" class="header item title">
+          <span class="menu-main-title">在庫管理システム</span>
+        </a>
+        <div class="ui secondary menu">
+          <a class="item" href="/zaiko/index.html">在庫一覧</a>
+          <a class="item" href="/nyuuko/index.html">入庫登録</a>
+          <a class="item" href="/syukko/index.html">出庫登録</a>
+          <a class="item" href="/master/product.html">商品マスタ</a>
+          <a class="item" href="/master/category.html">カテゴリマスタ</a>
+          <a class="item" href="/master/maker.html">メーカー</a>
+          <a class="item" href="/admin/userList.html">管理者</a>
+        </div>
+      </div>
+      <div class="mark">
+        <button
+          class="ui inverted black button"
+          onclick="location.href='/user/login.html'"
+        >
+          ログアウト
+        </button>
+      </div>
+    </div>
+    <div class="right-column">
+      <h3>ユーザー詳細</h3>
+      <div class="ui segment">
+        <form
+          id="user-search-form"
+          method="post"
+          th:action=""
+          class="form-inline"
+          th:object=""
+        >
+          <!--ユーザーの情報-->
+          <table class="ui celled striped table">
+            <tbody>
+              <tr>
+                <th>ユーザーID</th>
+                <td>
+                  <div class="ui input">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>パスワード</th>
+                <td>
+                  <div class="ui input">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>ユーザー名</th>
+                <td>
+                  <div class="ui input">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>誕生日</th>
+                <td>
+                  <div class="ui input">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>性別</th>
+                <td>
+                  <div class="ui input">
+                    <input type="text" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="btn">
+            <button class="ui inverted red button" 　type="submit">削除</button>
+            <button class="ui inverted blue button" 　type="submit">
+              更新
+            </button>
+            <button class="ui inverted green button" 　type="submit">
+              戻る
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

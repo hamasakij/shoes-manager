@@ -29,31 +29,42 @@
               th:object=""
             >
               <!-- ユーザーID -->
-              <div class="ui input">
-                <label for="userId"></label>
-                <input type="text" placeholder="ユーザーID" />
+              <div class="field">
+                <label for="userId">ユーザーID</label>
+                <div class="ui input">
+                  <input type="text" placeholder="ユーザーID" />
+                </div>
               </div>
               <!-- パスワード -->
-              <div class="ui input">
-                <label for="password"></label>
-                <input type="text" placeholder="パスワード" />
+              <div class="field">
+                <label for="password">パスワード</label>
+                <div class="ui input">
+                  <input type="text" placeholder="パスワード" />
+                </div>
               </div>
               <!-- ユーザー名 -->
-              <div class="ui input">
-                <label for="userName"></label>
-                <input type="text" placeholder="ユーザー名" />
+              <div class="field">
+                <label for="userName">ユーザー名</label>
+                <div class="ui input">
+                  <input type="text" placeholder="ユーザー名" />
+                </div>
               </div>
               <!-- 誕生日 -->
-              <div class="ui input">
-                <label for="birthday"></label>
-                <input type="text" placeholder="yyyy/MM/dd" />
+              <div class="field">
+                <label for="birthday"> 生年月日 </label>
+                <div class="ui input">
+                  <input type="text" placeholder="yyyy/mm/dd" />
+                </div>
               </div>
               <!-- 性別 -->
-              <div class="checkbox">
-                <input type="checkbox" name="example" />
-                <label>女性</label>
-                <input type="checkbox" name="example" />
-                <label>男性</label>
+              <div class="field">
+                <label for="gender">性別</label>
+                <div class="checkbox">
+                  <input type="checkbox" name="example" />
+                  <label>女性</label>
+                  <input type="checkbox" name="example" />
+                  <label>男性</label>
+                </div>
               </div>
               <!--登録ボタン-->
               <button class="ui button" data-ol-has-click-handler="">
