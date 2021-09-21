@@ -25,9 +25,36 @@
               id="user-search-form"
               method="post"
               th:action=""
-              class="form-inline"
+              class="login-form"
               th:object=""
             >
+              <!-- ユーザーID -->
+              <div class="ui input">
+                <label for="userId"></label>
+                <input type="text" placeholder="ユーザーID" />
+              </div>
+              <!-- パスワード -->
+              <div class="ui input">
+                <label for="password"></label>
+                <input type="text" placeholder="パスワード" />
+              </div>
+              <!-- ユーザー名 -->
+              <div class="ui input">
+                <label for="userName"></label>
+                <input type="text" placeholder="ユーザー名" />
+              </div>
+              <!-- 誕生日 -->
+              <div class="ui input">
+                <label for="birthday"></label>
+                <input type="text" placeholder="yyyy/MM/dd" />
+              </div>
+              <!-- 性別 -->
+              <div class="checkbox">
+                <input type="checkbox" name="example" />
+                <label>女性</label>
+                <input type="checkbox" name="example" />
+                <label>男性</label>
+              </div>
               <!--登録ボタン-->
               <button class="ui button" data-ol-has-click-handler="">
                 登録

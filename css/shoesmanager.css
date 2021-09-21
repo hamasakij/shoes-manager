@@ -45,3 +45,16 @@ th.action {
   padding: 30px;
   margin: auto;
 }
+.ui input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.signup {
+  text-align: center;
+  padding: 20px 0;
+}
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
