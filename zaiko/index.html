@@ -241,5 +241,42 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/semantic.js"></script>
+    <script src="../js/shoes-manager.js"></script>
+    <div class="ui modal transition shipping-modal">
+      <i class="close icon"></i>
+      <div class="header">出庫</div>
+      <div class="content">
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th class="th-width">出庫日</th>
+              <th class="th-width">商品ID</th>
+              <th class="th-width">カテゴリ/商品名/色</th>
+              <th class="th-width">出庫数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="">yyyy/mm/dd</td>
+              <td data-label="">1111</td>
+              <td data-label="">スニーカー/aaa/白</td>
+              <td data-label="">
+                <input
+                  type="text"
+                  size="5"
+                  maxlength="20"
+                  name="出庫数"
+                  value="0"
+                />個
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="actions">
+        <div class="ui approve button positive">OK</div>
+        <div class="ui cancel button">キャンセル</div>
+      </div>
+    </div>
   </body>
 </html>
