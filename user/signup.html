@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/semantic.css" />
+    <link rel="stylesheet" href="../css/shoesmanager.css" />
+    <meta charset="UTF-8" />
+    <title>新規利用者登録</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <!--ヘッダー-->
+      <div class="ui fixed inverted menu admin-menu">
+        <div class="ui container">
+          <a href="" class="header item title">
+            <span class="menu-main-title">在庫管理システム</span>
+          </a>
+        </div>
+      </div>
+      <div class="right-column">
+        <h3>利用者登録</h3>
+        <div class="ui segment">
+          <!--入力フォーム-->
+          <div class="login">
+            <form
+              id="user-search-form"
+              method="post"
+              th:action=""
+              class="form-inline"
+              th:object=""
+            >
+              <!--登録ボタン-->
+              <button class="ui button" data-ol-has-click-handler="">
+                登録
+              </button>
+            </form>
+          </div>
+          <div class="button">
+            <a
+              class="ui button mini green thumbnail-add"
+              tabindex="0"
+              href="/user/login.html"
+              >ログイン画面はこちら</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

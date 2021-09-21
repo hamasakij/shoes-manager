@@ -21,11 +21,18 @@
           <a class="item" href="/master/category.html">カテゴリマスタ</a>
           <a class="item" href="/master/maker.html">メーカー</a>
           <a class="item" href="/admin/userList.html">管理者</a>
-          <button class="ui inverted black button">ログアウト</button>
         </div>
       </div>
+      <div class="mark">
+        <button
+          class="ui inverted black button"
+          onclick="location.href='/user/login.html'"
+        >
+          ログアウト
+        </button>
+      </div>
     </div>
-
+    <!--main-->
     <div class="right-column">
       <h3>カテゴリ検索</h3>
       <div class="ui segment">
@@ -49,8 +56,8 @@
                 <option value="">6</option>
                 <option value="">7</option>
               </select>
+              <input class="prompt" type="text" placeholder="検索" />
             </div>
-            <input class="prompt" type="text" placeholder="検索" />
             <button class="ui inverted green button" 　type="submit">
               検索
             </button>

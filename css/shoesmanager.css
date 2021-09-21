@@ -36,3 +36,12 @@
 th.action {
   width: 180px;
 }
+.login {
+  text-align: center;
+  padding: 20px 0;
+}
+.login-form {
+  max-width: 330px;
+  padding: 30px;
+  margin: auto;
+}
