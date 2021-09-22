@@ -47,14 +47,20 @@
             <!--色-->
             <div class="ui category search">
               <div class="ui icon input">
-                <select class="ui search dropdown">
-                  <option value="">選択してください</option>
-                  <option value="">名前</option>
-                  <option value="">誕生日</option>
-                  <option value="">性別</option>
-                  <option value="">メールアドレス</option>
-                </select>
-                <input class="prompt" type="text" placeholder="検索" />
+                <div class="field">
+                  <select class="ui search dropdown">
+                    <option value="">選択してください</option>
+                    <option value="">名前</option>
+                    <option value="">誕生日</option>
+                    <option value="">性別</option>
+                    <option value="">メールアドレス</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <div class="ui input">
+                    <input class="ui input" type="text" placeholder="検索" />
+                  </div>
+                </div>
               </div>
               <button class="ui inverted green button" 　type="submit">
                 検索
@@ -79,10 +85,10 @@
         <table class="ui celled table">
           <thead>
             <tr>
-              <th class="th-width">名前</th>
-              <th class="th-width">誕生日</th>
-              <th class="th-width">性別</th>
-              <th class="th-width">メールアドレス</th>
+              <th class="width">名前</th>
+              <th class="width">誕生日</th>
+              <th class="width">性別</th>
+              <th class="width">メールアドレス</th>
               <th class="action"></th>
             </tr>
           </thead>

@@ -51,17 +51,27 @@
         >
           <div class="ui category search">
             <div class="ui icon input">
-              <select class="ui search dropdown">
-                <option value="">選択してください</option>
-                <option value="">商品ID</option>
-                <option value="">カテゴリ</option>
-                <option value="">商品名</option>
-                <option value="">メーカー</option>
-                <option value="">色</option>
-                <option value="">サイズ</option>
-                <option value="">値段</option>
-              </select>
-              <input class="prompt" type="text" placeholder="商品を探す" />
+              <div class="field">
+                <select class="ui search dropdown">
+                  <option value="">選択してください</option>
+                  <option value="">商品コード</option>
+                  <option value="">カテゴリ</option>
+                  <option value="">商品名</option>
+                  <option value="">メーカー</option>
+                  <option value="">色</option>
+                  <option value="">サイズ</option>
+                  <option value="">値段</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="ui input">
+                  <input
+                    class="ui input"
+                    type="text"
+                    placeholder="商品を探す"
+                  />
+                </div>
+              </div>
             </div>
             <button class="ui inverted green button" 　type="submit">
               追加
@@ -72,10 +82,11 @@
         <table class="ui celled table">
           <thead>
             <tr>
-              <th class="th-width">出庫日</th>
-              <th class="th-width">商品ID</th>
-              <th class="th-width">カテゴリ/商品名/色</th>
-              <th class="th-width">出庫数</th>
+              <th class="width">出庫日</th>
+              <th class="width">商品コード</th>
+              <th class="width">カテゴリ/商品名/カラー/サイズ</th>
+              <th class="width">在庫数</th>
+              <th class="width">出庫数</th>
             </tr>
           </thead>
           <tbody>
@@ -89,7 +100,8 @@
                 </div>
               </td>
               <td data-label="">1111</td>
-              <td data-label="">スニーカー/aaa/白</td>
+              <td data-label="">スニーカー/111/aaaa/白/26</td>
+              <td data-labal="">10</td>
               <td data-label="">
                 <input
                   type="text"
