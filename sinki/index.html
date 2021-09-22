@@ -46,10 +46,11 @@
             th:object=""
           >
             <!--カテゴリ-->
-            <div class="ui category search">
+            <div class="field">
+              <label>カテゴリ</label>
               <div class="ui icon input">
                 <select class="ui search dropdown">
-                  <option value="">選択してください</option>
+                  <option value="">カテゴリを選択してください</option>
                   <option value="">1</option>
                   <option value="">2</option>
                   <option value="">3</option>
@@ -60,60 +61,80 @@
                 </select>
               </div>
               <!--メーカー-->
+              <label>メーカー</label>
               <div class="ui icon input">
                 <select class="ui search dropdown">
-                  <option value="">選択してください</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
+                  <option value="">メーカーを選択してください</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
                 </select>
               </div>
             </div>
             <!--色-->
-            <div class="ui category search">
+            <div class="field">
+              <label>カラー</label>
               <div class="ui icon input">
                 <select class="ui search dropdown">
-                  <option value="">選択してください</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
+                  <option value="">カラーを選択してください</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
                 </select>
               </div>
               <!--サイズ-->
+              <label>サイズ</label>
               <div class="ui icon input">
                 <select class="ui search dropdown">
-                  <option value="">選択してください</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
+                  <option value="">サイズを選択してください</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
                 </select>
               </div>
             </div>
-            <!--値段-->
-            <div class="ui right labeled input">
-              <input type="text" placeholder="金額を入力してください" />
-              <div class="ui basic label">円</div>
-            </div>
             <!--商品コード-->
-            <div class="text-search">
-              <div class="ui search">
-                <input class="prompt" type="text" placeholder="商品コード..." />
+
+            <div class="field">
+              <div class="searchbar">
+                <div class="ui search">
+                  <label>商品コード</label>
+                  <input
+                    class="prompt"
+                    type="text"
+                    placeholder="商品コード..."
+                  />
+                  <label>商品名</label>
+                  <input class="prompt" type="text" placeholder="商品名..." />
+                </div>
+                <!--商品名-->
               </div>
-              <!--商品名-->
-              <div class="ui search">
-                <input class="prompt" type="text" placeholder="商品名..." />
+            </div>
+            <!--値段-->
+            <div class="field">
+              <label>金額</label>
+              <div class="price">
+                <div class="ui right labeled input">
+                  <input type="text" placeholder="金額" />
+                  <div class="ui basic label">円以上</div>
+                </div>
+                <div class="place">～</div>
+                <div class="ui right labeled input">
+                  <input type="text" placeholder="金額" />
+                  <div class="ui basic label">円未満</div>
+                </div>
               </div>
             </div>
           </form>
@@ -132,7 +153,7 @@
                 type="file"
                 name="thumbnail_file"
                 accept="image/*"
-                placeholder="追加する画像"
+                placeholder="サムネイル"
               />
               <input type="hidden" name="thumbnail" value="" />
               <div class="ui segment thumbnail-area">
@@ -142,12 +163,16 @@
                   alt="サムネイル"
                 />
               </div>
-              <a class="ui button mini green thumbnail-add" tabindex="0"
+              <a
+                class="ui button mini green thumbnail-add"
+                tabindex="0"
+                data-ol-has-click-handler=""
                 >追加</a
               >
               <a
                 class="ui button mini orange thumbnail-clear disabled"
                 tabindex="0"
+                data-ol-has-click-handler=""
                 >クリア</a
               >
             </div>
@@ -158,14 +183,12 @@
           <button class="ui button green new-entry-save" tabindex="0">
             商品の追加
           </button>
-          <a class="ui button" tabindex="0" href="">戻る</a>
+          <button class="ui button">
+            <p>
+              <a href="#" onclick="history.back(); return false;">戻る</a>
+            </p>
+          </button>
         </div>
-        <!-- CSRF保護 -->
-        <input
-          type="hidden"
-          name="_token"
-          value="PbwY8mzo184Xlff8tHmjop4GawOIlGGrE04POyGb"
-        />
       </div>
       　
     </div>

@@ -3,6 +3,12 @@
   <head>
     <link rel="stylesheet" href="../css/semantic.css" />
     <link rel="stylesheet" href="../css/shoesmanager.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.min.css"
+    />
+
     <meta charset="UTF-8" />
     <title>在庫一覧</title>
   </head>
@@ -104,7 +110,6 @@
             </div>
           </div>
           <!--商品コード-->
-
           <div class="field">
             <div class="searchbar">
               <div class="ui search">
@@ -251,6 +256,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/semantic.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui-calendar/0.0.8/calendar.js"
+      type="text/javascript"
+    ></script>
     <script src="../js/shoes-manager.js"></script>
     <div class="ui modal transition shipping-modal">
       <i class="close icon"></i>
@@ -267,7 +276,14 @@
           </thead>
           <tbody>
             <tr>
-              <td data-label="">yyyy/mm/dd</td>
+              <td data-label="">
+                <div class="ui calendar" id="date_calendar">
+                  <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" name="date" placeholder="yyyy/mm/dd" />
+                  </div>
+                </div>
+              </td>
               <td data-label="">1111</td>
               <td data-label="">スニーカー/aaa/白</td>
               <td data-label="">

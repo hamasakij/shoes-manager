@@ -58,6 +58,7 @@ label {
   width: auto;
   height: 50px;
 }
-.ui.modal.update-modal.transition.visible.active {
-  width: 40%;
+
+input[type="file"][name="thumbnail_file"] {
+  display: none;
 }
